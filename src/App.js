@@ -33,7 +33,7 @@ function Preview({markup}) {
 
 function App() {
 
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState(initialState);
 
   const handleChange = (event) => {
     setInput(event.target.value);
@@ -49,5 +49,31 @@ function App() {
     </div>
   );
 }
+
+const initialState = `# Titulo
+## Subtiutlo
+hola **como** _estas_.
+
+> que es esto
+
+Para ir a google haz click [aqui](https://www.google.com)
+
+¿Cómo usar la función \`printf()\`?
+
+\`\`\`
+#include <stdio.h>
+int main() {
+  printf("Hola mundo");
+  return 0;
+}
+\`\`\`
+
+1. uno
+2. dos
+3. tres
+
+
+![imagen](imagen.jpg)
+`
 
 export default App;
