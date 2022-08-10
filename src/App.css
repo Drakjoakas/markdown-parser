@@ -1,0 +1,81 @@
+
+
+#root{
+  height: 100vh;
+  background-color: #f2f2e9;
+}
+
+#app {
+  height: 100vh;
+  
+}
+
+.page-header {
+  text-align: center;
+  background-color: grey;
+}
+
+h1{
+  margin:0;
+  padding: 10px 0;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+#editor-container, #preview-container {
+  width: 40%;
+  
+}
+
+#editor-container {
+  
+  height: 80vh;
+  margin: 0px;
+  padding: 0px 20px;
+}
+
+#editor-container > textarea {
+  width: 100%;
+  height: 100%;
+  
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none;
+}
+
+
+#preview-container {
+  height: 100%;
+  padding: 0px 0px;
+  
+}
+
+#preview {
+  background-color: white;
+  padding: 0 50px;
+  overflow: auto;
+  height: 100%;
+}
+
+#preview table,
+#preview th,
+#preview td
+{
+  border: 1px solid;
+}
+
+.container-title {
+  text-align: center;
+  background-color: lightgrey;
+}
